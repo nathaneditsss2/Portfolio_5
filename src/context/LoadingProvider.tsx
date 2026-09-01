@@ -29,7 +29,6 @@ export const LoadingProvider = ({ children }: PropsWithChildren) => {
     setLoading,
   };
   useEffect(() => {
-    // Auto-start animations on mobile since there's no 3D model
     if (window.innerWidth <= 768) {
       import("../components/utils/initialFX").then((module) => {
         if (module.initialFX) {
@@ -38,10 +37,10 @@ export const LoadingProvider = ({ children }: PropsWithChildren) => {
           }, 100);
         }
       });
+      return;
     }
-  }, []);
 
-  useEffect(() => {}, [loading]);
+  }, []);
 
   return (
     <LoadingContext.Provider value={value as LoadingType}>

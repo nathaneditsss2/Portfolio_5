@@ -1,103 +1,103 @@
 export const config = {
     developer: {
-        name: "Redoyanul",
-        fullName: "Redoyanul Haque",
+        name: "Agus",
+        fullName: "Agus Kurniawan",
         title: "AI & Full-Stack Developer",
-        description: "AI & Full-Stack Developer building intelligent systems and modern web applications. Passionate about machine learning, deep learning, and creating next-gen autonomous agents."
+        description: "AI & Full-Stack Developer yang membangun sistem cerdas dan aplikasi web modern. Berfokus pada machine learning, deep learning, dan pengembangan agen otonom generasi berikutnya."
     },
     social: {
-        github: "red1-for-hek",
-        email: "redoyanul1234@gmail.com",
-        location: "Bangladesh"
+        github: "",
+        email: "aguskurniawan@contoh.com",
+        location: "Indonesia"
     },
     about: {
-        title: "About Me",
-        description: "I am a self-taught AI & Full-Stack Developer from Bangladesh. I build intelligent systems, chatbots, and modern web applications. My expertise includes Machine Learning, Deep Learning, NLP, and Full-Stack Web Development with React, Node.js, and Python. Currently building next-gen AI Agents and JARVIS-like Personal Assistants. I have a competitive programming mindset and a deep passion for automation. Code is poetry, AI is the canvas."
+        title: "Tentang Saya",
+        description: "Saya adalah AI & Full-Stack Developer autodidak asal Indonesia. Saya membangun sistem cerdas, chatbot, dan aplikasi web modern. Keahlian saya mencakup Machine Learning, Deep Learning, NLP, serta pengembangan web full-stack dengan React, Node.js, dan Python. Saat ini saya sedang mengembangkan AI Agent generasi berikutnya dan asisten pribadi seperti JARVIS. Saya memiliki pola pikir competitive programming dan ketertarikan mendalam pada otomatisasi. Kode adalah puisi, AI adalah kanvasnya."
     },
     experiences: [
         {
-            position: "Learning Something New",
-            company: "Self-Development",
-            period: "2025 - Present",
-            location: "Bangladesh",
-            description: "Continuously exploring emerging technologies, researching advanced AI systems, and pushing the boundaries of what's possible in tech.",
+            position: "Mempelajari Hal Baru",
+            company: "Pengembangan Diri",
+            period: "2025 - Sekarang",
+            location: "Indonesia",
+            description: "Terus mengeksplorasi teknologi baru, meneliti sistem AI tingkat lanjut, dan mendorong batas kemungkinan dalam dunia teknologi.",
             responsibilities: [
-                "Researching cutting-edge AI and ML technologies",
-                "Experimenting with new frameworks and tools",
-                "Contributing to open-source projects",
-                "Building innovative personal projects"
+                "Meneliti teknologi AI dan ML terkini",
+                "Bereksperimen dengan framework dan tools baru",
+                "Berkontribusi pada proyek open source",
+                "Membangun proyek pribadi yang inovatif"
             ],
-            technologies: ["Research", "Innovation", "Open Source", "New Tech"]
+            technologies: ["Riset", "Inovasi", "Open Source", "Teknologi Baru"]
         },
         {
             position: "AI Engineer",
-            company: "Freelance & Projects",
+            company: "Freelance & Proyek",
             period: "2025",
-            location: "Bangladesh",
-            description: "Developing intelligent AI systems, chatbots, and machine learning solutions. Building next-gen conversational AI agents and JARVIS-like personal assistants.",
+            location: "Indonesia",
+            description: "Mengembangkan sistem AI cerdas, chatbot, dan solusi machine learning. Membangun conversational AI agent generasi berikutnya serta asisten pribadi seperti JARVIS.",
             responsibilities: [
-                "Building AI-powered chatbots and conversational agents",
-                "Developing machine learning models with TensorFlow and PyTorch",
-                "Working with LLMs and transformer architectures",
-                "Creating autonomous AI systems and automation tools"
+                "Membangun chatbot dan conversational agent berbasis AI",
+                "Mengembangkan model machine learning dengan TensorFlow dan PyTorch",
+                "Bekerja dengan LLM dan arsitektur transformer",
+                "Menciptakan sistem AI otonom dan tools otomatisasi"
             ],
             technologies: ["Python", "TensorFlow", "PyTorch", "LLMs", "NLP", "AI Agents"]
         },
         {
             position: "Full-Stack Developer",
-            company: "Freelance & Projects",
+            company: "Freelance & Proyek",
             period: "2024",
-            location: "Bangladesh",
-            description: "Built complete web applications from frontend to backend. Developed responsive UIs, RESTful APIs, and database solutions for various clients and projects.",
+            location: "Indonesia",
+            description: "Membangun aplikasi web lengkap dari frontend hingga backend. Mengembangkan antarmuka responsif, RESTful API, dan solusi database untuk berbagai klien dan proyek.",
             responsibilities: [
-                "Developing full-stack web applications using React and Node.js",
-                "Building RESTful APIs and integrating databases",
-                "Creating responsive and interactive user interfaces",
-                "Deploying and maintaining web applications"
+                "Mengembangkan aplikasi web full-stack dengan React dan Node.js",
+                "Membangun RESTful API dan mengintegrasikan database",
+                "Menciptakan antarmuka pengguna yang responsif dan interaktif",
+                "Melakukan deployment dan pemeliharaan aplikasi web"
             ],
             technologies: ["React", "Node.js", "MongoDB", "Express", "Next.js", "TypeScript"]
         },
         {
             position: "Python Developer",
-            company: "Self-Taught & Projects",
+            company: "Belajar Mandiri & Proyek",
             period: "2023",
-            location: "Bangladesh",
-            description: "Dove deep into Python programming, building automation scripts, bots, and mastering the fundamentals of software development and problem-solving.",
+            location: "Indonesia",
+            description: "Mendalami pemrograman Python, membangun skrip otomatisasi dan bot, serta menguasai dasar-dasar pengembangan perangkat lunak dan pemecahan masalah.",
             responsibilities: [
-                "Learning Python programming and core concepts",
-                "Building automation scripts and Discord bots",
-                "Exploring data structures and algorithms",
-                "Participating in competitive programming"
+                "Mempelajari pemrograman Python dan konsep dasarnya",
+                "Membangun skrip otomatisasi dan bot Discord",
+                "Mengeksplorasi struktur data dan algoritma",
+                "Mengikuti competitive programming"
             ],
             technologies: ["Python", "Automation", "Scripting", "Discord.py", "Problem Solving"]
         },
         {
-            position: "Graphic Designer",
+            position: "Desainer Grafis",
             company: "Freelance",
             period: "2022",
-            location: "Bangladesh",
-            description: "Started my creative journey as a graphic designer, creating logos, banners, and visual content. This sparked my passion for technology and digital creation.",
+            location: "Indonesia",
+            description: "Memulai perjalanan kreatif sebagai desainer grafis dengan membuat logo, banner, dan konten visual. Pengalaman ini menumbuhkan minat saya pada teknologi dan karya digital.",
             responsibilities: [
-                "Designing logos and brand identity materials",
-                "Creating social media graphics and banners",
-                "Working with clients on creative projects",
-                "Learning design principles and visual aesthetics"
+                "Merancang logo dan materi identitas merek",
+                "Membuat grafis media sosial dan banner",
+                "Bekerja bersama klien dalam proyek kreatif",
+                "Mempelajari prinsip desain dan estetika visual"
             ],
-            technologies: ["Photoshop", "Illustrator", "Canva", "Figma", "Visual Design"]
+            technologies: ["Photoshop", "Illustrator", "Canva", "Figma", "Desain Visual"]
         },
         {
             position: "Microsoft Office",
-            company: "Begin Learning",
+            company: "Mulai Belajar",
             period: "2021",
-            location: "Bangladesh",
-            description: "Started my journey into the digital world by learning Microsoft Office tools. This foundational step introduced me to computers and sparked my curiosity for technology.",
+            location: "Indonesia",
+            description: "Memulai perjalanan di dunia digital dengan mempelajari Microsoft Office. Langkah awal ini memperkenalkan saya pada komputer dan menumbuhkan rasa ingin tahu terhadap teknologi.",
             responsibilities: [
-                "Learning Microsoft Word, Excel, and PowerPoint",
-                "Creating documents and presentations",
-                "Understanding basic computer operations",
-                "Building foundational digital skills"
+                "Mempelajari Microsoft Word, Excel, dan PowerPoint",
+                "Membuat dokumen dan presentasi",
+                "Memahami pengoperasian dasar komputer",
+                "Membangun keterampilan digital dasar"
             ],
-            technologies: ["MS Word", "MS Excel", "MS PowerPoint", "Computer Basics"]
+            technologies: ["MS Word", "MS Excel", "MS PowerPoint", "Dasar Komputer"]
         }
     ],
     projects: [
@@ -106,9 +106,9 @@ export const config = {
             title: "Drishti",
             category: "AI / LLM",
             technologies: "Python, PyTorch, Transformers, FastAPI, React, MongoDB",
-            image: "/images/Drishti.png",
-            description: "Bangladesh's first intelligent advanced AI chatbot powered by a custom Large Language Model. Features natural language understanding, contextual conversations, and multilingual support including Bengali.",
-            link: "https://huggingface.co/red1-for-hek/drishti-ilm-x1"
+            image: "/images/Drishti-id.png",
+            description: "Chatbot AI cerdas yang ditenagai Large Language Model khusus. Dilengkapi pemahaman bahasa alami, percakapan kontekstual, dan dukungan multibahasa.",
+            link: ""
         },
         {
             id: 2,
@@ -116,26 +116,26 @@ export const config = {
             category: "Blockchain",
             technologies: "Solidity, Web3.js, React, Ethereum, IPFS, MetaMask, Node.js",
             image: "/images/VoteChain.png",
-            description: "A decentralized election system built on blockchain technology ensuring transparent, tamper-proof, and verifiable voting. Features smart contracts for vote integrity and real-time result tracking.",
-            link: "https://github.com/red1-for-hek/smart-election-by-blockchain"
+            description: "Sistem pemilihan terdesentralisasi berbasis blockchain yang memastikan proses voting transparan, tahan manipulasi, dan dapat diverifikasi. Dilengkapi smart contract untuk menjaga integritas suara dan memantau hasil secara real-time.",
+            link: ""
         },
         {
             id: 4,
             title: "Flood Spaces 2.0",
             category: "AI / ML",
             technologies: "Python, TensorFlow, Pandas, React, FastAPI, GIS",
-            image: "/images/FloodSpaces.png",
-            description: "Predicts flood risks across Bangladesh up to one month in advance and sends early alerts to help people prepare.",
-            link: "https://github.com/red1-for-hek/Flood-Spaces-2.0"
+            image: "/images/FloodSpaces-id.png",
+            description: "Memprediksi risiko banjir hingga satu bulan sebelumnya dan mengirimkan peringatan dini agar masyarakat dapat bersiap.",
+            link: ""
         },
         {
             id: 5,
             title: "Phoenix 3.0",
-            category: "AI Assistant",
+            category: "Asisten AI",
             technologies: "Python, Speech Recognition, PyAutoGUI, OpenAI API, Tkinter",
             image: "/images/Phoenix3.0.png",
-            description: "A JARVIS-inspired personal AI desktop assistant. Controls system functions, manages tasks, answers queries, automates workflows, and provides voice-activated computing experience.",
-            link: "https://github.com/red1-for-hek/phoenix3.0"
+            description: "Asisten desktop AI pribadi yang terinspirasi JARVIS. Dapat mengontrol fungsi sistem, mengelola tugas, menjawab pertanyaan, mengotomatisasi workflow, dan menghadirkan pengalaman komputasi berbasis suara.",
+            link: ""
         },
         {
             id: 6,
@@ -143,8 +143,8 @@ export const config = {
             category: "AI / Game Engine",
             technologies: "Python, C++, Neural Networks, Bitboards, UCI Protocol",
             image: "/images/RedxChess.png",
-            description: "A high-performance chess engine rated 3640 ELO. Features advanced search algorithms, neural network evaluation, and optimized bitboard representation for lightning-fast move generation.",
-            link: "/play"
+            description: "Chess engine berperforma tinggi dengan rating 3640 ELO. Menggunakan algoritma pencarian tingkat lanjut, evaluasi neural network, dan representasi bitboard yang dioptimalkan untuk menghasilkan langkah dengan sangat cepat.",
+            link: ""
         },
         {
             id: 7,
@@ -152,41 +152,39 @@ export const config = {
             category: "E-commerce",
             technologies: "React, Node.js, MongoDB, Express, Stripe",
             image: "/images/Prodesk.png",
-            description: "A complete e-commerce platform with secure checkout and smooth product browsing.",
-            link: "https://github.com/red1-for-hek/prodesk"
+            description: "Platform e-commerce lengkap dengan proses checkout yang aman dan pengalaman menjelajahi produk yang nyaman.",
+            link: ""
         },
         {
             id: 8,
             title: "HekTools",
-            category: "Security / Android",
+            category: "Keamanan / Android",
             technologies: "Kotlin, Android SDK, Firebase, Python, Encryption",
             image: "/images/hektools.png",
-            description: "An advanced Android monitoring and security research tool. Features remote device management, activity logging, and encrypted data transmission for security testing purposes.",
+            description: "Tool riset pemantauan dan keamanan Android tingkat lanjut. Dilengkapi pengelolaan perangkat jarak jauh, pencatatan aktivitas, dan transmisi data terenkripsi untuk kebutuhan pengujian keamanan.",
             link: ""
         }
     ],
     contact: {
-        email: "redoyanul1234@gmail.com",
-        github: "https://github.com/red1-for-hek",
-        linkedin: "https://linkedin.com/in/red1-for-hek",
-        twitter: "https://x.com/red_1_ul",
-        facebook: "https://www.facebook.com/redoyanulhaque.hacker.official",
-        instagram: "https://www.instagram.com/red_1_ul"
+        email: "aguskurniawan@contoh.com",
+        github: "",
+        linkedin: "",
+        twitter: "",
+        facebook: "",
+        instagram: ""
     },
     skills: {
         develop: {
             title: "AI DEVELOPER",
-            description: "Building intelligent systems & AI solutions",
-            details: "Developing AI agents, chatbots, and machine learning models using Python, TensorFlow, and PyTorch. Specializing in LLMs, NLP, deep learning, and autonomous systems.",
+            description: "Membangun sistem cerdas & solusi AI",
+            details: "Mengembangkan AI agent, chatbot, dan model machine learning menggunakan Python, TensorFlow, dan PyTorch. Berfokus pada LLM, NLP, deep learning, dan sistem otonom.",
             tools: ["Python", "TensorFlow", "PyTorch", "OpenCV", "Scikit-learn", "LLMs", "NLP", "Deep Learning", "Chatbots", "AI Agents"]
         },
         design: {
             title: "FULL-STACK",
-            description: "Modern web development & scalable applications",
-            details: "Building responsive and performant web applications using React, Next.js, Node.js, and databases. Creating seamless user experiences with modern UI/UX principles.",
+            description: "Pengembangan web modern & aplikasi yang scalable",
+            details: "Membangun aplikasi web yang responsif dan berperforma tinggi menggunakan React, Next.js, Node.js, serta database. Menciptakan pengalaman pengguna yang mulus dengan prinsip UI/UX modern.",
             tools: ["React", "Next.js", "Node.js", "TypeScript", "MongoDB", "PostgreSQL", "TailwindCSS", "REST APIs", "Docker", "Git"]
         }
     }
 };
-
-

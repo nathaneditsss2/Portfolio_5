@@ -21,7 +21,7 @@
   transition: 0.3s;
   color: var(--backgroundColor);
 }
-.social-icons a:hover {
+.social-icons button:hover {
   color: var(--backgroundColor);
   /* transform: scale(1.2); */
 }
@@ -31,7 +31,7 @@
   position: relative;
   display: flex;
 }
-.social-icons a {
+.social-icons button {
   --siLeft: 50%;
   --siTop: 50%;
   position: absolute;
@@ -42,6 +42,12 @@
   font-size: 23px;
   will-change: left, top;
   transition: transform 0.3s ease-out;
+  appearance: none;
+  color: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
 }
 .resume-button {
   position: absolute;
@@ -61,11 +67,15 @@
   transition: 0.5s;
   transform-origin: left bottom;
   transform: translateX(100%) rotateZ(-90deg);
+  appearance: none;
+  background: none;
+  border: 0;
+  padding: 0;
 }
 .resume-button:hover {
   color: #fff;
 }
-div.resume-button span {
+.resume-button span {
   color: #fff;
   font-size: 17px;
   margin-top: -1px;
@@ -86,7 +96,7 @@ div.resume-button span {
     display: flex;
     gap: 20px;
   }
-  .social-icons a {
+  .social-icons button {
     font-size: 28px;
   }
 }
@@ -96,7 +106,7 @@ div.resume-button span {
     font-size: 20px;
     line-height: 20px;
   }
-  div.resume-button span {
+  .resume-button span {
     font-size: 23px;
     margin-top: -1.5px;
   }

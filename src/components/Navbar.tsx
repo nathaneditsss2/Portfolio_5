@@ -4,11 +4,17 @@ import HoverLinks from "./HoverLinks";
 import { gsap } from "gsap";
 import Lenis from "lenis";
 import "./styles/Navbar.css";
+import { config } from "../config";
 
 gsap.registerPlugin(ScrollTrigger);
 export let lenis: Lenis | null = null;
 
 const Navbar = () => {
+  const initials = config.developer.fullName
+    .split(" ")
+    .map((part) => part[0])
+    .join("");
+
   useEffect(() => {
     // Initialize Lenis smooth scroll
     lenis = new Lenis({
@@ -67,29 +73,29 @@ const Navbar = () => {
     <>
       <div className="header">
         <a href="/#" className="navbar-title" data-cursor="disable">
-          RH
+          {initials}
         </a>
-        <a
-          href="mailto:redoyanul1234@gmail.com"
+        <button
+          type="button"
           className="navbar-connect"
           data-cursor="disable"
         >
-          redoyanul1234@gmail.com
-        </a>
+          KONTAK
+        </button>
         <ul>
           <li>
             <a data-href="#about" href="#about">
-              <HoverLinks text="ABOUT" />
+              <HoverLinks text="TENTANG" />
             </a>
           </li>
           <li>
             <a data-href="#work" href="#work">
-              <HoverLinks text="WORK" />
+              <HoverLinks text="KARYA" />
             </a>
           </li>
           <li>
             <a data-href="#contact" href="#contact">
-              <HoverLinks text="CONTACT" />
+              <HoverLinks text="KONTAK" />
             </a>
           </li>
         </ul>

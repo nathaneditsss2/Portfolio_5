@@ -7,12 +7,12 @@ const MyWorks = () => {
     <div className="myworks-page">
       <div className="myworks-header">
         <Link to="/" className="back-button" data-cursor="disable">
-          ← Back to Home
+          ← Kembali ke Beranda
         </Link>
         <h1>
-          All <span>Works</span>
+          Semua <span>Karya</span>
         </h1>
-        <p>A collection of all my projects and creations</p>
+        <p>Kumpulan proyek dan karya yang telah saya buat</p>
       </div>
 
       <div className="myworks-grid">

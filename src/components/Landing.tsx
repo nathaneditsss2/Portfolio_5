@@ -1,8 +1,7 @@
-import { PropsWithChildren } from "react";
 import "./styles/Landing.css";
 import { config } from "../config";
 
-const Landing = ({ children }: PropsWithChildren) => {
+const Landing = () => {
   const nameParts = config.developer.fullName.split(" ");
   const firstName = nameParts[0] || config.developer.name;
   const lastName = nameParts.slice(1).join(" ") || "";
@@ -12,7 +11,7 @@ const Landing = ({ children }: PropsWithChildren) => {
       <div className="landing-section" id="landingDiv">
         <div className="landing-container">
           <div className="landing-intro">
-            <h2>Hello! I'm</h2>
+            <h2>Halo! Saya</h2>
             <h1>
               {firstName.toUpperCase()}
               {' '}
@@ -21,26 +20,18 @@ const Landing = ({ children }: PropsWithChildren) => {
             </h1>
           </div>
           <div className="landing-info">
-            <h3>An</h3>
-            <h2 className="landing-info-h2">
-              <div className="landing-h2-1">AI Engineer</div>
-            </h2>
-            <h2>
-              <div className="landing-h2-info">Full-Stack Developer</div>
-            </h2>
-          </div>
-          {/* Mobile photo - shows only on mobile when 3D character is hidden */}
-          <div className="mobile-photo">
-            <img
-              src="/images/mypicnbg.png"
-              alt="Redoyanul Haque"
-              loading="eager"
-              fetchPriority="high"
-              decoding="async"
-            />
+            <h3>Seorang</h3>
+            <div
+              className="landing-role"
+              aria-label="AI Engineer dan Full-Stack Developer"
+            >
+              <span className="landing-role-primary">AI Engineer</span>
+              <span className="landing-role-secondary">
+                dan Full-Stack Developer
+              </span>
+            </div>
           </div>
         </div>
-        {children}
       </div>
     </>
   );

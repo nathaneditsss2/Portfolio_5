@@ -64,66 +64,56 @@ const Contact = () => {
           <div className="contact-box">
             <h4>Email</h4>
             <p>
-              <a href={`mailto:${config.contact.email}`} data-cursor="disable">
+              <button type="button" className="contact-email" data-cursor="disable">
                 {config.contact.email}
-              </a>
+              </button>
             </p>
-            <h4>Location</h4>
+            <h4>Lokasi</h4>
             <p>
               <span>{config.social.location}</span>
             </p>
           </div>
           <div className="contact-box">
-            <h4>Social</h4>
-            <a
-              href={config.contact.github}
-              target="_blank"
-              rel="noopener noreferrer"
+            <h4>Media Sosial</h4>
+            <button
+              type="button"
               data-cursor="disable"
               className="contact-social"
             >
               Github <MdArrowOutward />
-            </a>
-            <a
-              href={config.contact.linkedin}
-              target="_blank"
-              rel="noopener noreferrer"
+            </button>
+            <button
+              type="button"
               data-cursor="disable"
               className="contact-social"
             >
               Linkedin <MdArrowOutward />
-            </a>
-            <a
-              href={config.contact.twitter}
-              target="_blank"
-              rel="noopener noreferrer"
+            </button>
+            <button
+              type="button"
               data-cursor="disable"
               className="contact-social"
             >
               Twitter <MdArrowOutward />
-            </a>
-            <a
-              href={config.contact.facebook}
-              target="_blank"
-              rel="noopener noreferrer"
+            </button>
+            <button
+              type="button"
               data-cursor="disable"
               className="contact-social"
             >
               Facebook <MdArrowOutward />
-            </a>
-            <a
-              href={config.contact.instagram}
-              target="_blank"
-              rel="noopener noreferrer"
+            </button>
+            <button
+              type="button"
               data-cursor="disable"
               className="contact-social"
             >
               Instagram <MdArrowOutward />
-            </a>
+            </button>
           </div>
           <div className="contact-box">
             <h2>
-              Designed and Developed <br /> by <span>{config.developer.fullName}</span>
+              Dirancang dan Dikembangkan <br /> oleh <span>{config.developer.fullName}</span>
             </h2>
             <h5>
               <MdCopyright /> {new Date().getFullYear()}

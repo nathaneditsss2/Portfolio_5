@@ -51,7 +51,7 @@ const techStack: TechItem[][] = [
   // Row 4 - 6 items
   [
     { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg", url: "https://git-scm.com" },
-    { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", url: "https://github.com" },
+    { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg", url: "" },
     { name: "Linux", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg", url: "https://linux.org" },
     { name: "AWS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg", url: "https://aws.amazon.com" },
     { name: "VS Code", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg", url: "https://code.visualstudio.com" },
@@ -96,20 +96,38 @@ const TechStackNew = () => {
         <div className="techstack-pyramid">
           {techStack.map((row, rowIndex) => (
             <div key={rowIndex} className="techstack-row">
-              {row.map((tech, techIndex) => (
-                <a
-                  key={techIndex}
-                  href={tech.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="techstack-item"
-                  title={tech.name}
-                  data-cursor="disable"
-                >
-                  <img src={tech.icon} alt={tech.name} loading="lazy" decoding="async" />
-                  <span>{tech.name}</span>
-                </a>
-              ))}
+              {row.map((tech, techIndex) => {
+                const content = (
+                  <>
+                    <img src={tech.icon} alt={tech.name} loading="lazy" decoding="async" />
+                    <span>{tech.name}</span>
+                  </>
+                );
+
+                return tech.url ? (
+                  <a
+                    key={techIndex}
+                    href={tech.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="techstack-item"
+                    title={tech.name}
+                    data-cursor="disable"
+                  >
+                    {content}
+                  </a>
+                ) : (
+                  <button
+                    key={techIndex}
+                    type="button"
+                    className="techstack-item"
+                    title={tech.name}
+                    data-cursor="disable"
+                  >
+                    {content}
+                  </button>
+                );
+              })}
             </div>
           ))}
         </div>

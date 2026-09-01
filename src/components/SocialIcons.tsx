@@ -8,7 +8,6 @@ import "./styles/SocialIcons.css";
 import { TbNotes } from "react-icons/tb";
 import { useEffect } from "react";
 import HoverLinks from "./HoverLinks";
-import { config } from "../config";
 
 const SocialIcons = () => {
   useEffect(() => {
@@ -16,7 +15,7 @@ const SocialIcons = () => {
 
     social.querySelectorAll("span").forEach((item) => {
       const elem = item as HTMLElement;
-      const link = elem.querySelector("a") as HTMLElement;
+      const link = elem.querySelector("button") as HTMLButtonElement;
 
       const rect = elem.getBoundingClientRect();
       let mouseX = rect.width / 2;
@@ -61,32 +60,32 @@ const SocialIcons = () => {
     <div className="icons-section">
       <div className="social-icons" data-cursor="icons" id="social">
         <span>
-          <a href={config.contact.github} target="_blank" rel="noopener noreferrer">
+          <button type="button" aria-label="Github">
             <FaGithub />
-          </a>
+          </button>
         </span>
         <span>
-          <a href={config.contact.linkedin} target="_blank" rel="noopener noreferrer">
+          <button type="button" aria-label="Linkedin">
             <FaLinkedinIn />
-          </a>
+          </button>
         </span>
         <span>
-          <a href={config.contact.twitter} target="_blank" rel="noopener noreferrer">
+          <button type="button" aria-label="Twitter">
             <FaXTwitter />
-          </a>
+          </button>
         </span>
         <span>
-          <a href={config.contact.instagram} target="_blank" rel="noopener noreferrer">
+          <button type="button" aria-label="Instagram">
             <FaInstagram />
-          </a>
+          </button>
         </span>
       </div>
-      <a className="resume-button" href="#">
-        <HoverLinks text="RESUME" />
+      <button type="button" className="resume-button">
+        <HoverLinks text="CV" />
         <span>
           <TbNotes />
         </span>
-      </a>
+      </button>
     </div>
   );
 };
