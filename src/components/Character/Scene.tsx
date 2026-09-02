@@ -65,10 +65,17 @@ const Scene = () => {
           headBone = character.getObjectByName("spine006") || null;
           screenLight = character.getObjectByName("screenlight") || null;
           progress.loaded().then(() => {
-            setTimeout(() => {
-              light.turnOnLights();
-              animations.startIntro();
-            }, 2500);
+            // Loading.tsx tears its overlay down 2.5s after progress hits 100%.
+            // Ramp the lights so they finish as the page is revealed rather than
+            // after it — every light starts at zero intensity, so until this
+            // runs the model renders as an unlit black silhouette.
+            const overlayTeardown = 2500;
+            const rampDuration = 1.6;
+            setTimeout(
+              () => light.turnOnLights(rampDuration),
+              Math.max(overlayTeardown - rampDuration * 1000, 0)
+            );
+            setTimeout(() => animations.startIntro(), overlayTeardown);
           });
           window.addEventListener("resize", () =>
             handleResize(renderer, camera, canvasDiv, character)

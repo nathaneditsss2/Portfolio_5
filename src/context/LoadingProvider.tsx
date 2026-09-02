@@ -2,7 +2,6 @@ import {
   createContext,
   PropsWithChildren,
   useContext,
-  useEffect,
   useState,
 } from "react";
 import Loading from "../components/Loading";
@@ -16,11 +15,11 @@ interface LoadingType {
 export const LoadingContext = createContext<LoadingType | null>(null);
 
 export const LoadingProvider = ({ children }: PropsWithChildren) => {
-  const [isLoading, setIsLoading] = useState(() => {
-    // Skip loading on mobile
-    if (window.innerWidth <= 768) return false;
-    return true;
-  });
+  // Mobile used to skip the loader and drop straight into an unready page —
+  // while still downloading and decrypting the same 1.5MB model. Now that the
+  // character runs its full scroll choreography on phones too, it gets the same
+  // loading screen, which is also what covers the unlit model as it comes up.
+  const [isLoading, setIsLoading] = useState(true);
   const [loading, setLoading] = useState(0);
 
   const value = {
@@ -28,19 +27,6 @@ export const LoadingProvider = ({ children }: PropsWithChildren) => {
     setIsLoading,
     setLoading,
   };
-  useEffect(() => {
-    if (window.innerWidth <= 768) {
-      import("../components/utils/initialFX").then((module) => {
-        if (module.initialFX) {
-          setTimeout(() => {
-            module.initialFX();
-          }, 100);
-        }
-      });
-      return;
-    }
-
-  }, []);
 
   return (
     <LoadingContext.Provider value={value as LoadingType}>

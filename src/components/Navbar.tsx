@@ -75,13 +75,6 @@ const Navbar = () => {
         <a href="/#" className="navbar-title" data-cursor="disable">
           {initials}
         </a>
-        <button
-          type="button"
-          className="navbar-connect"
-          data-cursor="disable"
-        >
-          KONTAK
-        </button>
         <ul>
           <li>
             <a data-href="#about" href="#about">

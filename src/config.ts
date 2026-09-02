@@ -106,7 +106,7 @@ export const config = {
             title: "Drishti",
             category: "AI / LLM",
             technologies: "Python, PyTorch, Transformers, FastAPI, React, MongoDB",
-            image: "/images/Drishti-id.png",
+            image: "/images/Drishti-id.webp",
             description: "Chatbot AI cerdas yang ditenagai Large Language Model khusus. Dilengkapi pemahaman bahasa alami, percakapan kontekstual, dan dukungan multibahasa.",
             link: ""
         },
@@ -115,7 +115,7 @@ export const config = {
             title: "VoteChain",
             category: "Blockchain",
             technologies: "Solidity, Web3.js, React, Ethereum, IPFS, MetaMask, Node.js",
-            image: "/images/VoteChain.png",
+            image: "/images/VoteChain.webp",
             description: "Sistem pemilihan terdesentralisasi berbasis blockchain yang memastikan proses voting transparan, tahan manipulasi, dan dapat diverifikasi. Dilengkapi smart contract untuk menjaga integritas suara dan memantau hasil secara real-time.",
             link: ""
         },
@@ -124,7 +124,7 @@ export const config = {
             title: "Flood Spaces 2.0",
             category: "AI / ML",
             technologies: "Python, TensorFlow, Pandas, React, FastAPI, GIS",
-            image: "/images/FloodSpaces-id.png",
+            image: "/images/FloodSpaces-id.webp",
             description: "Memprediksi risiko banjir hingga satu bulan sebelumnya dan mengirimkan peringatan dini agar masyarakat dapat bersiap.",
             link: ""
         },
@@ -133,7 +133,7 @@ export const config = {
             title: "Phoenix 3.0",
             category: "Asisten AI",
             technologies: "Python, Speech Recognition, PyAutoGUI, OpenAI API, Tkinter",
-            image: "/images/Phoenix3.0.png",
+            image: "/images/Phoenix3.0.webp",
             description: "Asisten desktop AI pribadi yang terinspirasi JARVIS. Dapat mengontrol fungsi sistem, mengelola tugas, menjawab pertanyaan, mengotomatisasi workflow, dan menghadirkan pengalaman komputasi berbasis suara.",
             link: ""
         },
@@ -142,7 +142,7 @@ export const config = {
             title: "RedxChess",
             category: "AI / Game Engine",
             technologies: "Python, C++, Neural Networks, Bitboards, UCI Protocol",
-            image: "/images/RedxChess.png",
+            image: "/images/RedxChess.webp",
             description: "Chess engine berperforma tinggi dengan rating 3640 ELO. Menggunakan algoritma pencarian tingkat lanjut, evaluasi neural network, dan representasi bitboard yang dioptimalkan untuk menghasilkan langkah dengan sangat cepat.",
             link: ""
         },
@@ -151,7 +151,7 @@ export const config = {
             title: "Prodesk",
             category: "E-commerce",
             technologies: "React, Node.js, MongoDB, Express, Stripe",
-            image: "/images/Prodesk.png",
+            image: "/images/Prodesk.webp",
             description: "Platform e-commerce lengkap dengan proses checkout yang aman dan pengalaman menjelajahi produk yang nyaman.",
             link: ""
         },
@@ -160,7 +160,7 @@ export const config = {
             title: "HekTools",
             category: "Keamanan / Android",
             technologies: "Kotlin, Android SDK, Firebase, Python, Encryption",
-            image: "/images/hektools.png",
+            image: "/images/hektools.webp",
             description: "Tool riset pemantauan dan keamanan Android tingkat lanjut. Dilengkapi pengelolaan perangkat jarak jauh, pencatatan aktivitas, dan transmisi data terenkripsi untuk kebutuhan pengujian keamanan.",
             link: ""
         }

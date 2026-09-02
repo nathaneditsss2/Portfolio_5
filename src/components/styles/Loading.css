@@ -353,6 +353,33 @@
     font-size: 16px;
   }
 }
+
+/* This loader only ever ran above 768px, so phone widths were never tuned. The
+   default --Lsize is too narrow for "Selamat Datang": it wrapped onto two lines
+   and showed above and below the black "Memuat" bar that is meant to hide it
+   until the fill completes. Widen the track, tighten the pill, and scale the
+   marquee down so it does not overflow a 390px screen. */
+@media only screen and (max-width: 499px) {
+  .loading-wrap {
+    --Lsize: 190px;
+  }
+  .loading-button {
+    padding: 18px 26px;
+    font-size: 16px;
+  }
+  .loading-container {
+    left: 26px;
+  }
+  .loading-content2 {
+    white-space: nowrap;
+  }
+  .loading-marquee {
+    font-size: 34px;
+  }
+  .loading-marquee span {
+    padding: 0px 26px;
+  }
+}
 @media only screen and (min-width: 1200px) {
   .loading-header {
     padding: 35px 0px;

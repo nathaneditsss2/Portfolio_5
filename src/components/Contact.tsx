@@ -15,6 +15,7 @@ const Contact = () => {
         start: "top 80%",
         end: "bottom center",
         toggleActions: "play none none none",
+        invalidateOnRefresh: true,
       },
     });
 

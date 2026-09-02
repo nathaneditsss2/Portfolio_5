@@ -11,14 +11,25 @@ const Loading = ({ percent }: { percent: number }) => {
   const [isLoaded, setIsLoaded] = useState(false);
   const [clicked, setClicked] = useState(false);
 
-  if (percent >= 100) {
-    setTimeout(() => {
-      setLoaded(true);
-      setTimeout(() => {
-        setIsLoaded(true);
-      }, 1000);
-    }, 600);
-  }
+  const complete = percent >= 100;
+
+  useEffect(() => {
+    if (!complete) return;
+    const fill = setTimeout(() => setLoaded(true), 600);
+    const done = setTimeout(() => setIsLoaded(true), 1600);
+    return () => {
+      clearTimeout(fill);
+      clearTimeout(done);
+    };
+  }, [complete]);
+
+  // The progress bar only reaches 100% when the character model resolves. If it
+  // never does (slow network, WebGL unavailable, a decrypt failure) the loader
+  // would hold the page hostage at ~91%, so let it through regardless.
+  useEffect(() => {
+    const failsafe = setTimeout(() => setIsLoaded(true), 20000);
+    return () => clearTimeout(failsafe);
+  }, []);
 
   useEffect(() => {
     import("./utils/initialFX").then((module) => {

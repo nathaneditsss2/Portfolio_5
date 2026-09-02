@@ -3,10 +3,6 @@
     display: none;
   }
 
-  .character-model {
-    display: none !important;
-  }
-
   .landing-section,
   .landing-container {
     height: auto !important;
@@ -570,6 +566,9 @@ h2.landing-info-h2 {
 }
 
 @media only screen and (max-width: 768px) {
+  /* Absolute, so the character scrolls away with the landing section instead of
+     staying pinned over the copy below it. There is no desk reveal at this
+     width — see the early return in GsapScroll.ts setCharTimeline(). */
   .character-container {
     position: absolute;
     top: 0;
@@ -582,7 +581,7 @@ h2.landing-info-h2 {
   }
 
   .character-model {
-    display: block !important;
+    display: block;
     position: absolute;
     bottom: 70px;
     width: 100%;

@@ -34,9 +34,8 @@ const setLighting = (scene: THREE.Scene) => {
       pointLight.intensity = 0;
     }
   }
-  const duration = 2;
   const ease = "power2.inOut";
-  function turnOnLights() {
+  function turnOnLights(duration = 2) {
     gsap.to(scene, {
       environmentIntensity: 0.64,
       duration: duration,
