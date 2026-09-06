@@ -1,4 +1,5 @@
 .cta-section {
+  box-sizing: border-box;
   width: 100%;
   padding: 80px 20px;
   background-color: var(--backgroundColor);
@@ -42,7 +43,7 @@
 /* Responsive */
 @media only screen and (max-width: 768px) {
   .cta-section {
-    padding: 60px 20px;
+    padding: 32px 20px 40px;
   }
 
   .cta-buttons {

@@ -3,62 +3,59 @@ import "./styles/Contact.css";
 import { config } from "../config";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const Contact = () => {
+  const contactRef = useRef<HTMLDivElement>(null);
+
   useEffect(() => {
-    const contactTimeline = gsap.timeline({
-      scrollTrigger: {
-        trigger: ".contact-section",
-        start: "top 80%",
-        end: "bottom center",
-        toggleActions: "play none none none",
-        invalidateOnRefresh: true,
-      },
-    });
+    const media = gsap.matchMedia();
 
-    // Animate title from bottom
-    contactTimeline.fromTo(
-      ".contact-section h3",
-      {
-        opacity: 0,
-        y: 50,
+    // Keep contact details visible by default on touch devices and with reduced
+    // motion. Desktop reveals are optional and revert when the breakpoint changes.
+    media.add(
+      "(min-width: 1025px) and (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference)",
+      () => {
+        if (!contactRef.current) return;
+        const contactTimeline = gsap.timeline({
+          scrollTrigger: {
+            trigger: contactRef.current,
+            start: "top 80%",
+            end: "bottom center",
+            toggleActions: "play none none none",
+            invalidateOnRefresh: true,
+          },
+        });
+
+        contactTimeline.fromTo(
+          "h3",
+          { opacity: 0, y: 50 },
+          { opacity: 1, y: 0, duration: 0.8, ease: "power3.out" }
+        );
+
+        contactTimeline.fromTo(
+          ".contact-box",
+          { opacity: 0, y: 50 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.6,
+            stagger: 0.15,
+            ease: "power3.out",
+          },
+          "-=0.4"
+        );
       },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.8,
-        ease: "power3.out",
-      }
+      contactRef
     );
 
-    // Animate contact boxes with stagger from bottom
-    contactTimeline.fromTo(
-      ".contact-box",
-      {
-        opacity: 0,
-        y: 50,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        duration: 0.6,
-        stagger: 0.15,
-        ease: "power3.out",
-      },
-      "-=0.4"
-    );
-
-    // Clean up
-    return () => {
-      contactTimeline.kill();
-    };
+    return () => media.revert();
   }, []);
 
   return (
-    <div className="contact-section section-container" id="contact">
+    <div className="contact-section section-container" id="contact" ref={contactRef}>
       <div className="contact-container">
         <h3>{config.developer.fullName}</h3>
         <div className="contact-flex">

@@ -159,6 +159,13 @@
 }
 
 /* Responsive */
+@media screen and (max-width: 768px) {
+  .techstack-new {
+    min-height: 0;
+    padding: 48px 0 24px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .techstack-content {
     max-width: 900px;
